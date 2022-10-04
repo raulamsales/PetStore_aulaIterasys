@@ -14,8 +14,11 @@ dependencies {
     testImplementation group: 'org.testng', name: 'testng', version: '7.5'
     // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
     testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '4.5.1'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.36'
+
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
